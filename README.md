@@ -1,2 +1,2 @@
 # Chatter
-Chatting App
+Chatting App 😅
