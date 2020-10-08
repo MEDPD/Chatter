@@ -1,8 +1,19 @@
 const express = require('express')
 const app = express()
+import {User} from './models'
+
 
 // console.log(db)
 
+app.get('/', async (req, res) =>{
+    const user = new User("med", "ouioui")
+     
+    
+    if(! await user.save()) return res.status(500).json({
+        message: 'we are sorry, this was an Internal server error, please try again later! '
+    })
+    else res.send('GoodBye ...')
+})
 
 
 
@@ -14,9 +25,6 @@ module.exports = app;
 
 
 
-// app.get('/', (req, res) =>{
-//     res.send('GoodBye ...')
-// })
 
 // app.get('/addDoc', async (req, res) =>{
 //    const docRef = db.collection('users').doc()
