@@ -1,20 +1,31 @@
 const express = require('express')
 const app = express()
-import {User} from './models'
+// import {User} from './entities'
 
 
 // console.log(db)
 
 app.get('/', async (req, res) =>{
-    const user = new User("med", "ouioui")
+
+   
+    // const user = new User("med", "ouioui")
      
     
-    if(! await user.save()) return res.status(500).json({
-        message: 'we are sorry, this was an Internal server error, please try again later! '
-    })
-    else res.send('GoodBye ...')
+    // if(! await user.save()) return res.status(500).json({
+    //     message: 'we are sorry, this was an Internal server error, please try again later! '
+    // })
+
+    // else res.send('GoodBye ...')
 })
 
+
+// TODO 
+     // ! make a controller adapter factory and a controller Adapter for all controllers 
+    // ! make the Registrycontroller and the LoginController
+   // ! inside the controllers call the use case function
+  // ! inside the use case call entity (do the business logic and )
+ // ! call the DAO (Data Access Object) to add the entity.doc() to the DB
+// ! return a response with a body equial to entity.model()
 
 
 module.exports = app;

@@ -1,10 +1,17 @@
 
-import dbAdapter from './db.adpater'
-
-
-
+import hashAdapter from './hash.adapter'
+import sanitizeAdapter from './sanitize.adapter'
+import controllerAdapater from './controllerAdapater'
 
 export default Object.freeze({
-    dbAdapter
-
+    hashAdapter,
+    sanitizeAdapter,
+    controllerAdapater
 })
+
+export {
+    hashAdapter,
+    sanitizeAdapter,
+    controllerAdapater
+}
+

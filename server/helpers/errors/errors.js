@@ -27,6 +27,16 @@ export class UniqueConstraintError extends Error {
       }
     }
   }
+  
+  export class InternalServerError extends Error {
+    constructor () {
+      super("Sorry, Internal Server Error, try later")
+  
+      if (Error.captureStackTrace) {
+        Error.captureStackTrace(this, RequiredParameterError)
+      }
+    }
+  }
 
   export default {
       InvalidPropertyError,
