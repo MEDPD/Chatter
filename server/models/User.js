@@ -22,7 +22,8 @@ return class User {
         this.setPassword = () => {
 
         }
-        Object.preventExtensions(this);
+        
+        // Object.seal(this);
         Object.freeze(this)
     }
     isValidUsername(username){
