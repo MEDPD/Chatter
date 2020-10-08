@@ -43,6 +43,7 @@ return class User {
         Object.freeze(this)
     }
 
+    
     // class functions *****************
     isValidUsername(username){
         

@@ -1,17 +1,18 @@
 
 import hashAdapter from './hash.adapter'
 import sanitizeAdapter from './sanitize.adapter'
-import controllerAdapater from './controllerAdapater'
+import requestAdapter from './request.adapter'
+
 
 export default Object.freeze({
     hashAdapter,
     sanitizeAdapter,
-    controllerAdapater
+    requestAdapter
 })
 
 export {
     hashAdapter,
     sanitizeAdapter,
-    controllerAdapater
+    requestAdapter
 }
 
