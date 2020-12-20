@@ -5,7 +5,7 @@ more Emojis ...... that's all
  😜 🤪 😝 🤑 🤗 🤭 🤫 🤔 🤐 🤨 😐 😑 😶 😏 😒 🙄 😬 🤥 😌 😔 😪 
 
 
-###guidelines for all contributors
+### guidelines for all contributors
 
 1- first of all u have to take a look to the issues section in order to have an idea about the issue which was assigned 
 to u.
